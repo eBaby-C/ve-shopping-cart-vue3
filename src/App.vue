@@ -1,19 +1,26 @@
 <template>
   <div id="shopping-cart-container">
-    <div id="shopping-cart-header">
-      <div>全选</div>
-      <div>名字</div>
-      <div>照片</div>
-      <div>数量</div>
-      <div>单价</div>
-      <div>总价</div>
-      <div>操作</div>
+    <div id="shopping-cart-header" class="shopping-cart-dispay">
+      <div><input type="checkbox" id=""></div>
+      <div><span>名字</span></div>
+      <div><span>照片</span></div>
+      <div><span>数量</span></div>
+      <div><span>单价</span></div>
+      <div><span>总价</span></div>
+      <div><span>操作</span></div>
     </div>
     <div 
-      class="shopping-cart-goodList"
+      class="shopping-cart-goodList shopping-cart-dispay"
       v-for="g in goods"
-      :key="g.goodsName"
+      :key=g.key
     >
+      <div><input type="checkbox" id=""></div>
+      <div><span>名字</span></div>
+      <div><span>照片</span></div>
+      <div><span>数量</span></div>
+      <div><span>单价</span></div>
+      <div><span>总价</span></div>
+      <div><span>操作</span></div>
     </div>
     <div id="shopping-cart-footer"></div>
   </div>
@@ -41,5 +48,12 @@ onMounted(
 </script>
 
 <style scoped>
+
+.shopping-cart-dispay {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
 
 </style>

@@ -3,42 +3,49 @@
 		"goodsName": "Vue",
 		"goodsNum": 1,
 		"goodsImg": "Vue.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 1
 	},
 	"React": {
 		"goodsName": "React",
 		"goodsNum": 1,
 		"goodsImg": "React.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 2
 	},
 	"JavaScript": {
 		"goodsName": "JavaScript",
 		"goodsNum": 1,
 		"goodsImg": "JS.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 3
 	},
 	"Angular": {
 		"goodsName": "Angular",
 		"goodsNum": 1,
 		"goodsImg": "Angular.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 4
 	},
 	"typescript": {
 		"goodsName": "TS",
 		"goodsNum": 1,
 		"goodsImg": "TS.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 5
 	},
 	"Vite": {
 		"goodsName": "Vite",
 		"goodsNum": 1,
 		"goodsImg": "Vite.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 6
 	},
 	"webpack": {
 		"goodsName": "Vuwebpacke",
 		"goodsNum": 1,
 		"goodsImg": "webpack.png",
-		"goodsPrice": 100
+		"goodsPrice": 100,
+		"key": 7
 	}
 }

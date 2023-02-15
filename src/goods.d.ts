@@ -7,4 +7,5 @@ type GoodsType = {
   goodsNum: number;
   goodsImg: string;
   goodsPrice: number;
+  key: number
 }
