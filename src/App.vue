@@ -1,27 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="shopping-cart-container">
+    <div id="shopping-cart-header"></div>
+    <div class="shopping-cart-goodList">
+    </div>
+    <div id="shopping-cart-footer"></div>
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script setup lang="ts">
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
+import { onMounted, reactive } from 'vue';
+import axios from 'axios';
+
+
+const goods: MySchema = reactive({})
+
+onMounted(
+  () => {
+    axios
+      .get('./API.json')
+      .then(response => goods.value = response.data)
   }
-});
+)
+
+
+
+
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
