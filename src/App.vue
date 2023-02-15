@@ -2,7 +2,7 @@
   <div id="shopping-cart-container">
     <div id="shopping-cart-header" class="shopping-cart-dispay">
       <div><input type="checkbox" id=""></div>
-      <div><span>名字</span></div>
+      <div class="goods-name"><span>名字</span></div>
       <div><span>照片</span></div>
       <div><span>数量</span></div>
       <div><span>单价</span></div>
@@ -15,8 +15,8 @@
       :key=g.key
     >
       <div><input type="checkbox" id=""></div>
-      <div><span>名字</span></div>
-      <div><span>照片</span></div>
+      <div class="goods-name"><span>{{ g.goodsName }}</span></div>
+      <div><img :src="require(`../public/image/${g.goodsImg}`)" alt=""></div>
       <div><span>数量</span></div>
       <div><span>单价</span></div>
       <div><span>总价</span></div>
@@ -47,13 +47,34 @@ onMounted(
 
 </script>
 
-<style scoped>
+<style>
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .shopping-cart-dispay {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
 
+#shopping-cart-header {
+  height: 60px;
+  background-color: pink;
+  line-height: 60px;
+  font-size: 25px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+.goods-name {
+  flex-basis: 100px;
 }
 
 </style>
