@@ -10,17 +10,19 @@
       <div><span>操作</span></div>
     </div>
     <div 
-      class="shopping-cart-goodList shopping-cart-dispay"
+      class="shopping-cart-goodList "
       v-for="g in goods"
       :key=g.key
     >
-      <div><input type="checkbox" id=""></div>
-      <div class="goods-name"><span>{{ g.goodsName }}</span></div>
-      <div><img :src="require(`../public/image/${g.goodsImg}`)" alt=""></div>
-      <div><span>数量</span></div>
-      <div><span>单价</span></div>
-      <div><span>总价</span></div>
-      <div><span>操作</span></div>
+      <div class="shopping-cart-dispay">
+        <div><input type="checkbox" id=""></div>
+        <div class="goods-name"><span>{{ g.goodsName }}</span></div>
+        <div><img :src="require(`../public/image/${g.goodsImg}`)" alt=""></div>
+        <div><span>{{ g.goodsNum }}</span></div>
+        <div><span>{{ g.goodsPrice }}</span></div>
+        <div><span>{{ g.goodsNum * g.goodsPrice }}</span></div>
+        <div><span>操作</span></div>
+      </div>
     </div>
     <div id="shopping-cart-footer"></div>
   </div>
@@ -48,6 +50,8 @@ onMounted(
 </script>
 
 <style>
+
+
 
 body {
   padding: 0;
