@@ -18,7 +18,7 @@
         <div><input type="checkbox" id=""></div>
         <div class="goods-name"><span>{{ g.goodsName }}</span></div>
         <div><img :src="require(`../public/image/${g.goodsImg}`)" alt=""></div>
-        <div><span>{{ g.goodsNum }}</span></div>
+        <div><input type="number" v-model="g.goodsNum" id="goods-num"></div>
         <div><span>{{ g.goodsPrice }}</span></div>
         <div><span>{{ g.goodsNum * g.goodsPrice }}</span></div>
         <div><span>操作</span></div>
@@ -65,6 +65,10 @@ body {
   justify-content: space-between;
 }
 
+.shopping-cart-dispay > div {
+  flex-basis: 10%;
+}
+
 #shopping-cart-header {
   height: 60px;
   background-color: pink;
@@ -79,6 +83,13 @@ img {
 
 .goods-name {
   flex-basis: 100px;
+}
+
+#goods-num {
+  width: 50px;
+  line-height: 40px;
+  font-size: 30px;
+
 }
 
 </style>
