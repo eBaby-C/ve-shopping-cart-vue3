@@ -47,5 +47,34 @@
 		"goodsImg": "webpack.png",
 		"goodsPrice": 100,
 		"key": 7
+	},
+	"webp32ack": {
+		"goodsName": "Vuwebpacke",
+		"goodsNum": 1,
+		"goodsImg": "webpack.png",
+		"goodsPrice": 100,
+		"key": 8
+	},
+	"webp2ack": {
+		"goodsName": "Vuwebpacke",
+		"goodsNum": 1,
+		"goodsImg": "webpack.png",
+		"goodsPrice": 100,
+		"key": 9
+	},
+	"webp1ack": {
+		"goodsName": "Vuwebpacke",
+		"goodsNum": 1,
+		"goodsImg": "webpack.png",
+		"goodsPrice": 100,
+		"key": 10
+	},
+	"webp21312ack": {
+		"goodsName": "Vuwebpacke",
+		"goodsNum": 1,
+		"goodsImg": "webpack.png",
+		"goodsPrice": 100,
+		"key": 11
 	}
+
 }
