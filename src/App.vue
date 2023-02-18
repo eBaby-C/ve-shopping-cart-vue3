@@ -1,7 +1,7 @@
 <template>
   <div id="shopping-cart-container">
     <div id="shopping-cart-header" class="shopping-cart-dispay">
-      <div><input type="checkbox" ></div>
+      <div><input type="checkbox" v-model="checkAll"></div>
       <div class="goods-name"><span>名字</span></div>
       <div><span>照片</span></div>
       <div><span>数量</span></div>
@@ -9,17 +9,32 @@
       <div><span>总价</span></div>
       <div><span>操作</span></div>
     </div>
-    <Goods />
+    <Goods :handle-checkAll="handleCheckAll" />
     <div id="shopping-cart-footer"></div>
   </div>
 </template>
 
 <script setup lang="ts">
 
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import Goods from './Goods.vue';
 
-const a = ref(null)
+const checkAll = ref(false)
+
+/**
+ * 
+ * @param checkValue 这个值决定是否全选
+ */
+const handleCheckAll = (checkValue: boolean) => {
+  // checkValue === true ? 
+}
+
+watch(
+  () => checkAll.value,
+  (newV, oldV) => {
+    if (newV) 
+  }
+)
 
 
 
