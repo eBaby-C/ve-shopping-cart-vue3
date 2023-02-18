@@ -1,7 +1,7 @@
 <template>
   <div id="shopping-cart-container">
     <div id="shopping-cart-header" class="shopping-cart-dispay">
-      <div><input type="checkbox"></div>
+      <div><input type="checkbox" ></div>
       <div class="goods-name"><span>名字</span></div>
       <div><span>照片</span></div>
       <div><span>数量</span></div>
@@ -16,7 +16,10 @@
 
 <script setup lang="ts">
 
+import { onMounted, ref } from 'vue';
 import Goods from './Goods.vue';
+
+const a = ref(null)
 
 
 
